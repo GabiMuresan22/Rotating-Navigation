@@ -10,10 +10,6 @@ body {
   margin: 0;
 }
 
-.container.show-nav + nav li {
-  transform: translateX(0);
-  transition-delay: 0.3s;
-}
 
 nav {
   position: fixed;
@@ -36,7 +32,6 @@ nav ul li {
 }
 
 nav ul li i {
-  font-size: 20px;
   margin-right: 10px;
  }
 
@@ -86,6 +81,15 @@ nav ul li + li + li {
   transform: rotate(-20deg);
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
 .circle-container {
   position: fixed;
   top: -100px;
@@ -125,5 +129,9 @@ nav ul li + li + li {
   top: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
+}
+
+.container .circle-container .circle .fas {
+  font-size: 26px;
 }
 
